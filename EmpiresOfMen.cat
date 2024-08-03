@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalogue xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" library="false" id="EmpiresOfMen" name="Empires of Men" gameSystemId="sys-4f0d-3456-d5f3-75dd" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="Fast Attack" id="Fast Attack" />
+    <categoryEntry name="Ranged Support" id="Ranged Support" />
+    <categoryEntry name="Mounts" id="Mounts" />
+  </categoryEntries>
+  <selectionEntries>
+    <selectionEntry type="unit" name="Imperial Sword" id="imperialSword">
+      <categoryLinks>
+        <categoryLink name="Battle Line" id="a6441187741ddf94da87ac5203e821f3" targetId="Battle Line" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Imperial Sword" id="310df56b514dfca4ab763f6982abca9e" defaultAmount="10">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="6" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="86d802f54f3e4d6409a10461a406585c" />
+            <constraint type="max" value="21" field="selections" scope="parent" shared="true" id="c1cc73de01c75c54ba564a8f179523b8" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Hand Weapon and Shield" id="c22f088fbc5d31349b4ecbc2d0a42c42" type="selectionEntry" targetId="ccwshield">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b670fea02f28aa842ba00d4e4978cfe0" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe3be98ff18950f4b98fedf959b9aecf" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Foot Knights" id="footKnights">
+      <categoryLinks>
+        <categoryLink name="Battle Line" id="322d1d190d63010469363f55a3267056" targetId="Battle Line" primary="true" />
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Set" id="9eab1607dacd0fc43b03aefeccf5ace9" defaultSelectionEntryId="ccwshield">
+          <entryLinks>
+            <entryLink name="Hand Weapon and Shield" id="981750117b4ecc24b839e14390ed7ca7" type="selectionEntry" targetId="ccwshield">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c1eaf558d4bfcd40868306c211653f9" />
+              </constraints>
+            </entryLink>
+            <entryLink name="Greatweapon" id="c98cc707d85510246b82f94f63468d0d" type="selectionEntry" targetId="greatweapon">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a84fdfbb31c281a4096ccd5afe46bf0b" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9763b1bbdada5984a8ca54ba261c2c76" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cd47256a8f440649a2e7fa4adafcab6" />
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Foot Knights" id="fd3e951deb69e504481f0fbb9feda474" defaultAmount="10">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="8" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="05bab4ec5a57fc94496bcfaadbaa50eb" />
+            <constraint type="max" value="18" field="selections" scope="parent" shared="true" id="97798a226634eec479d95867852a0f25" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Heavy Armor" id="4ac07b0d9df415e4a9c6deca3d5e2aff" type="selectionEntry" targetId="heavyArmor">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3daae78086b58445b65412938d684de" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58c85f5792a628847916b306b4f18734" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Imperial Halberd" id="imperialHalberd">
+      <categoryLinks>
+        <categoryLink name="Battle Line" id="e86bacb97ad6b5647b04bb9ffddacf3e" targetId="Battle Line" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Imperial Halberd" id="607ec48527411e6448c29451275c34e6" defaultAmount="10">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="6" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="d7a23019dcf0c424b82f238922a82d97" />
+            <constraint type="max" value="21" field="selections" scope="parent" shared="true" id="e2012339b1b8667468db79b932b07708" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Halberd" id="bfa90faf72bb64a43885f790c6f50ac6" type="selectionEntry" targetId="halberd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="beb50b2e66c820049a57e650ceb5512a" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56fdd6ae9ef96374eaad29b09d6d8831" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Imperial Spear" id="imperialSpear">
+      <categoryLinks>
+        <categoryLink name="Battle Line" id="b2ef5d75248274448b1e4d2d2865feb6" targetId="Battle Line" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Imperial Spear" id="1055cc71d3ab9e84fa66ee9c8ae441cb" defaultAmount="10">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="6" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="d443284e6760b5e49b9b36479a550fd3" />
+            <constraint type="max" value="21" field="selections" scope="parent" shared="true" id="794f3c8ba2c3b124b88e50bc63eba19b" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Spear and Shield" id="d78d856ec70f1404ea603eed33cade3f" type="selectionEntry" targetId="spearshield">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a1a4ad8b42b7ba48be86c0889d5aa87" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54d4376af281d0e4d90a320459e5ed35" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Imperial Knights" id="imperialKnights">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" id="188472558464a36498d1c1342a235129" targetId="Fast Attack" primary="true" />
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Set" id="40fbf3ca39efd9c439366e8560c018d0" defaultSelectionEntryId="ccwshield">
+          <entryLinks>
+            <entryLink name="Hand Weapon and Shield" id="5ce0b565bb28a8c4ea3b256dc8ee1bc7" type="selectionEntry" targetId="ccwshield">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88ea33ca687013041b699b69120942c9" />
+              </constraints>
+            </entryLink>
+            <entryLink name="Greatweapon" id="8b9d4048b075d8d45ab0d93ab0121c14" type="selectionEntry" targetId="greatweapon">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="054415c8568aeb741b52cbea97afd6b9" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Lance and Shield" id="01ff3d8a2cd82144aaa805181ad5acce" type="selectionEntry" targetId="lanceShield">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4cde73a1fd1f3749b503346ef93a2c2" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="2" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9681831e26d984741b3fde77d895f17b" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abc6b39ee377e1041838b77f971fadb9" />
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Imperial Knights" id="b738b1150734dbe48b73b6ccf5f29383" defaultAmount="5">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="19" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="b9ef5c4da44d9a24e8e22c780fc99011" />
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="efa2e9a9915533d4cb99a2eb5d605e59" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Heavy Armor" id="55516d131743c2c42b28d5f5f1491213" type="selectionEntry" targetId="heavyArmor">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b4d8557ffb61d84daec2e7b589f9c24" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b124f6baba4e0e43a487601f29c466a" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Imperial Light Cavalry" id="imperialLightCavalry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" id="778eb6fb74bce1e488a1ed5b2db4b70f" targetId="Fast Attack" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Imperial Light Cavalry" id="1131dd226ddd39d4d83208c7e8d276e0" defaultAmount="5">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="19" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="22c65f008f319064fbe7cf3f9ab429cc" />
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="d00ed02cfc551e546889daccfc05fbc2" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Hand Weapon" id="af58c7ea869e2884f917d03b557ac53d" type="selectionEntry" targetId="ccw">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79df2fbb2a42b134db6284bfe3804ec5" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="147acaf1fea124a48b147654a9f8bb61" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Brace of Pistols" id="1a9a4fbe1024d4e4f916b6106a8436d1" type="selectionEntry" targetId="bracePistols">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="05b0dbcdf7fc5d8408f74a9c15bfb65c" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23e8364e33a3cf543859e3890957884e" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Imperial Archers" id="imperialArchers">
+      <categoryLinks>
+        <categoryLink name="Ranged Support" id="0ee03e0f29d6bf241983bfc5b960e310" targetId="Ranged Support" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Imperial Archers" id="47702f10a5d82934f84a7ab9e88b3cf8" defaultAmount="10">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="8" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="fdf971e38baeb0f4485271f11a622909" />
+            <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="c1eb0de61d7878847b844181d7f80984" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Longbows" id="619868afc036ab54b843e96ae2347f58" type="selectionEntry" targetId="longbow">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="daeea876efaf4d842a5c729af45be27e" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01ce088d6f576064b868267827cc91b4" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Imperial Crossbowmen" id="imperialCrossbowmen">
+      <categoryLinks>
+        <categoryLink name="Ranged Support" id="6a40a03abe52c87409b68574526b7285" targetId="Ranged Support" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Imperial Crossbowmen" id="1ccb767e953ade64bbced20773c9123b" defaultAmount="10">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="8" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="f9c64d5ac8fd78542a41cc6b1c2e23d5" />
+            <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="31abad99ff3aa9343a7ff2212cbdd3b9" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Crossbows" id="1468012d19b4f7341bf660144316472a" type="selectionEntry" targetId="crossbow">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7dea79b9a0102fe42bc8674bcec5e794" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5266c9cf6d9eaf14c9a389cf5f860c72" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Imperial Handguns" id="imperialHandguns">
+      <categoryLinks>
+        <categoryLink name="Ranged Support" id="2311cfe6954dba6408cbedf245d3e3f6" targetId="Ranged Support" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Imperial Handguns" id="ac64cf485abe3e243b32bc7c540da067" defaultAmount="10">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="8" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="44d91a6432a8f72428292ffe0d0bd4bc" />
+            <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="1f360d8e4d17626449321f4fd4172d0b" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Handguns" id="62877605edbb06741ba04247a01cdecc" type="selectionEntry" targetId="handgun">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44f313b22dc9af04c8b1270e6ec8976c" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e608cb9cbd408449ab92f50c18bbb6e" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Imperial Cannon" id="imperialCannon">
+      <categoryLinks>
+        <categoryLink name="Ranged Support" id="95602f1cf05d56e4d87494774aef895a" targetId="Ranged Support" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Imperial Cannon" id="19b380ae6e8a1af40908857ae66fdbc8" defaultAmount="1">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="60" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e2678e1b624e764d98bd35ae996dc5e" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aea8cc5c6a8cb064dae37f15028fe7ad" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Cannon" id="69a1f20b51faa0240b2a228a77ab9e90" type="selectionEntry" targetId="cannon">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65d5191cddd37c64f92f3e3cc5f1ca6f" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8205d1d21207f5c43bda8b560bd3ef9d" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Lethal Shots" id="cbdd2595594fe124c9c6de7f16aafc64" type="selectionEntry" targetId="lethalShots">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f464148607fb09468119a43e89984b9" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6be084c7e788d54a8e92bf5bea65564" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Protected Crew" id="24ecf733f08347c4182ea257429cfbc7" type="selectionEntry" targetId="protectedCrew">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d43d277671dcac47bbe832556bbf10a" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67e82a6935bedba45ad8fae25d711bee" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Reposition" id="a841380fcea93e044a68a51c5f8a4109" type="selectionEntry" targetId="reposition">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5def2c0cac7f97b41a2d4f6b46c1e9f6" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09a9579a7edd4e74ebea2135595be449" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Imperial Mortar" id="imperialMortar">
+      <categoryLinks>
+        <categoryLink name="Ranged Support" id="2ef0f615384dd71488a0391a41368622" targetId="Ranged Support" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Imperial Mortar" id="b887b0a263654c749a003d41f92bf054" defaultAmount="1">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="55" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc435bec8f588094597799d83b2f57d5" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c80f04d62cb89ba4a9a783886d1a98a1" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Mortar" id="96bf7ad3eb276e14599cb77e6638cfa9" type="selectionEntry" targetId="mortar">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7df3b59a73c48874787be4da74bb5a0f" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a4497b6c5d30114abe8b325f219c0ee" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Protected Crew" id="ac85b253e1e7e82479c97805c074aae9" type="selectionEntry" targetId="protectedCrew">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f101d932badf1814484a030acb8fdbbe" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf5177faccef77b48aac6c1d25d2e416" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Reposition" id="5ed73ebf677b4f54da08e8d1bd707651" type="selectionEntry" targetId="reposition">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d28d34e4c0b02844fb15acc03911e9ff" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98df0154f0a182741b6e9f18cddaafad" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Gryphon" id="gryphon">
+      <categoryLinks>
+        <categoryLink name="Mounts" id="c89c56bd250dbfb4d8c2cbc7983be9dc" targetId="Mounts" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Gryphon" id="4ea04706756262649939dc922f59092f" defaultAmount="1">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="55" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6972b979ba82e849b61c13a54463eaa" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fe959edd6031fa4c83f069205751538" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Claws" id="671aa0f82fab7b5408fc33388053a2b6" type="selectionEntry" targetId="claws">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f56745ee7f507844a93d5028b8e49e0" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de27c69d87541004c87f92be044ad44d" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Flying" id="7bed3b4943d650c418451d8475ad5fc3" type="selectionEntry" targetId="flying">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f889009a882ad14a85dd07eb9b2157c" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2e56f0e62032b04183257440ac8a29a" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Imperial Dragon" id="imperialDragon">
+      <categoryLinks>
+        <categoryLink name="Mounts" id="42b925627f82263499a200b915cc7e1b" targetId="Mounts" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Imperial Dragon" id="858ee4b9a0acf984989be2e0b6ebf05c" defaultAmount="1">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="150" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3733b66c54be74747bd127345efac11c" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26b2971407c00364182a5d8fee53f2fb" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Fangs" id="806b14c6becf89347b74ffff50b8632c" type="selectionEntry" targetId="fangs">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed4866a0eabd98e458da518a2dc15684" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9253b749b97ec47428f4b7769877ab9b" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Fire Breath" id="a53ec96afd86ed14cb1871127a2519f8" type="selectionEntry" targetId="fireBreath">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d083c29ac6c035042af94955075d207c" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08dcac55f9db4914288e5b969c956140" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Flying" id="8ac6594fd0ea4ea40b3a83c87944428c" type="selectionEntry" targetId="flying">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9879a9a2a44f3d648a84fc9cf8ee5934" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df24a876237a984498e9dc2a888a1574" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Captain" id="captain">
+      <categoryLinks>
+        <categoryLink name="Commanders" id="3d04794950d6ce44fa9e9518cef63772" targetId="Commanders" primary="true" />
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Retinue" id="a4bc32d56d9e0bd44aebda1e4707278a">
+          <entryLinks>
+            <entryLink import="true" name="Imperial Sword" id="602be42923ce122488d1984615aa3b3d" type="selectionEntry" targetId="imperialSword" />
+            <entryLink import="true" name="Imperial Halberd" id="6451c9d674ae94d40b58e8b5ceb2c2d6" type="selectionEntry" targetId="imperialHalberd" />
+            <entryLink import="true" name="Imperial Spear" id="df6008927ae92624daa93ad3d04751de" type="selectionEntry" targetId="imperialSpear" />
+            <entryLink import="true" name="Light Cavalry" id="18dd44b523dd2eb4085c424a8bd9eaf9" type="selectionEntry" targetId="imperialLightCavalry" />
+            <entryLink import="true" name="Gryphon" id="a85a5465b6253ec48809461fbb785bb7" type="selectionEntry" targetId="gryphon" />
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92598845c828f9245a7e8bffa7d2de18" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34220b1bf9316404d9d8800b9f087c76" />
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon Set" id="01a5aaf00cad9e74ea55463e059a675f" defaultSelectionEntryId="ccwshield">
+          <entryLinks>
+            <entryLink name="Hand Weapon and Shield" id="5bf767ef1b2b3e64ea002f097a186d80" type="selectionEntry" targetId="ccwshield">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d604b205d3280b4ab1942609f47ed66" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="5" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Greatweapon" id="01fc5f0aaa1ef024ea9e8fde9dd4d652" type="selectionEntry" targetId="greatweapon">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0b7fbdbcafb98b439f0288103a2713d" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="10" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Two Hand Weapons" id="4576553b637b46a40ab5dbe0e38adb78" type="selectionEntry" targetId="2CCW">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74655edeaf7789245a50f1938dec7415" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="10" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0fed728fec93ca040929ff38fc99e2f0" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0bce7d39f54c1a64c9ff13077942bf15" />
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Captain" id="9c2b48e39b9a5264fb5227e1c8148dea" defaultAmount="1">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="50" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Brace of Pistols" id="93cdfd7fc800b514b99af265ccfc7fcd" type="selectionEntry" targetId="bracePistolsCommander">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5865da8d93d37554da4bd3c91e6752a6" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f651d39d47896049a0e4c5772fc45fb" />
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="10" field="268a-a403-0d9c-50ac">
+              <repeats>
+                <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink name="Inspire Valor" id="f8080a718ebfaa640b75098f8255c4c5" type="selectionEntry" targetId="inspireValor">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6730e619f56d9cf4b986ce0f93789e2f" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2887b1c771416df48b9d54422d345474" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Knight Commander" id="knightCommander">
+      <categoryLinks>
+        <categoryLink name="Commanders" id="773a5dd2f092faf4a9e7491e40f059a7" targetId="Commanders" primary="true" />
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Retinue" id="825281dea6c71184aa2baf51bd91c71c">
+          <entryLinks>
+            <entryLink import="true" name="Imperial Knights" id="f4ff9b05220e8bf4283aed95cda4e0d5" type="selectionEntry" targetId="imperialKnights" />
+            <entryLink import="true" name="Foot Knights" id="238f6689f1bc4e148a824c01b5ab5b60" type="selectionEntry" targetId="footKnights" />
+            <entryLink import="true" name="Gryphon" id="8cb776210cecac44d9f427908b07a2e8" type="selectionEntry" targetId="gryphon" />
+            <entryLink import="true" name="Imperial Dragon" id="e2ea8cf35efc9b94e8f8189703abf42a" type="selectionEntry" targetId="imperialDragon" />
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e0e042bad80f2648ad640dea7d399c5" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b0086b0b1bf79b488d78a1292b6c2c2" />
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon Set" id="a04f44b5bedb9ff4083b3eb2b132eef2" defaultSelectionEntryId="lanceShield">
+          <entryLinks>
+            <entryLink name="Lance and Shield" id="28e7cef49a72e5844bd832e8394959dc" type="selectionEntry" targetId="lanceShield">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f74e0633834fe214182b83a4c97742b1" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="10" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Hand Weapon and Shield" id="cde634559c944be4cbff77725308bd39" type="selectionEntry" targetId="ccwshield">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59ac59cc10c4f6b45bc12115f29f9e86" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="5" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Greatweapon" id="35648c19507e9994aaab111eb4ff3f8a" type="selectionEntry" targetId="greatweapon">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04337f40553a5314e9538026cd84d9ec" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="10" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4df6b968e2f5593468f2494f601177b4" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1ccc36cc29f5444591e0073bd1ce497" />
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Knight Commander" id="457dbd0907c7d754dbe42efff409eabb" defaultAmount="1">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="60" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Heavy Armor" id="e25e217c4ff303041830b8a0e9bb57b0" type="selectionEntry" targetId="heavyArmor">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="013e9b2f026b01a45b8e39d626faa64f" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b30cc018d611c214aad3a5c08eb6dac8" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Furious Charge" id="aeb4dad87a34b814199873b148c349f0" type="selectionEntry" targetId="furiousCharge">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e079d581d8f89d439d6b808efda34e1" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28279f5ffa3dc8d409534fe97df8d42c" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Imperial Wizard" id="imperialWizard">
+      <categoryLinks>
+        <categoryLink name="Commanders" id="c385d2fa19e356d4f997ce9d53a20a39" targetId="Commanders" primary="true" />
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Retinue" id="74c5541a9295c8a449d485013b9cdd0c">
+          <entryLinks>
+            <entryLink import="true" name="Imperial Archers" id="26aa21ea4edcfe842ac651e6d94ab3e9" type="selectionEntry" targetId="imperialArchers" />
+            <entryLink import="true" name="Imperial Crossbowmen" id="d32a4879805938345b648f60ec76f823" type="selectionEntry" targetId="imperialCrossbowmen" />
+            <entryLink import="true" name="Imperial Handguns" id="766a1709f9b94cd46841ed21c4c49e0c" type="selectionEntry" targetId="imperialHandguns" />
+            <entryLink import="true" name="Foot Knights" id="3595af83ab7b27c41a26a58cb7119952" type="selectionEntry" targetId="footKnights" />
+            <entryLink import="true" name="Gryphon" id="2592cb667f3369b44842f063136185b5" type="selectionEntry" targetId="gryphon" />
+            <entryLink import="true" name="Imperial Dragon" id="1c6ff118c85fece4dbc291622d67bd4d" type="selectionEntry" targetId="imperialDragon" />
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="90b67df080744024b885969f706e3fcc" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be46fb8b708cd6148b1b383efa6e7384" />
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Imperial Wizard" id="d51b811d69d3ffd4592cb49265f11cae" defaultAmount="1">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="45" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks />
+    </selectionEntry>
+  </selectionEntries>
+  <forceEntries>
+    <forceEntry name="Warband" id="1a5b4ad8c51d5404285c65c53d38cbdd">
+      <categoryLinks>
+        <categoryLink name="Commanders" id="f09d44b6e7a892f469b7045461e244b2" targetId="Commanders">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="f438f5ab1546aa2478ca3e8fa2614a6e" />
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d7077d7dfc56d25478984f4b36c93ed4" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Battle Line" id="578351755ace90c4ebb87b8419f6ce19" targetId="Battle Line">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="a124ebecef523644c9dba851b5536ff1" />
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="501b6eeb3a8da814b8f7551b1e7a38ff" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" id="560090e006bf9cb428112cd0579bcba1" targetId="Fast Attack">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="392cf98c080e52a4aace0bed98531e88" />
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f3bb568bfda10f042a7a9fd0486816ce" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Ranged Support" id="37f8924f64a55844fb8a8e803d95d3ae" targetId="Ranged Support">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="4d0bb3a5b7ed25e4292f2013f32bfac2" />
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0dee45c13840827489603e8b38f5af6e" />
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="062dad10013e6bb4a85935c982f27bc5" />
+        <constraint type="max" value="500" field="limit::268a-a403-0d9c-50ac" scope="force" shared="true" id="8604516820469004b88818dbfe3b9911" />
+      </constraints>
+    </forceEntry>
+  </forceEntries>
+</catalogue>

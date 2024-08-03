@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalogue xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" library="false" id="GreenskinTribes" name="Greenskin Tribes" gameSystemId="sys-4f0d-3456-d5f3-75dd" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="Raiders" id="Raiders" />
+    <categoryEntry name="Ranged Support" id="Ranged Support" />
+    <categoryEntry name="Big Stuff" id="Big Stuff" />
+    <categoryEntry name="Mounts" id="Mounts" />
+  </categoryEntries>
+  <selectionEntries>
+    <selectionEntry type="unit" name="Orc Warriors" id="orcWarriors">
+      <categoryLinks>
+        <categoryLink name="Battle Line" id="2971ec6066b6cf14c92871a0e9e8294f" targetId="Battle Line" primary="true" />
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Set" id="7c22e870a7065f24ebd45ed3985855f5" defaultSelectionEntryId="ccwshield">
+          <entryLinks>
+            <entryLink name="Hand Weapon and Shield" id="dbf1f6c74f768c44e98f57b4a24cd901" type="selectionEntry" targetId="ccwshield">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6646270aafb1dd4bbd3c3c451aa0a68" />
+              </constraints>
+            </entryLink>
+            <entryLink name="Two Hand Weapons" id="34368b4ee34218d45bf453be4dcc68ab" type="selectionEntry" targetId="2CCW">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0611e8a4f23e2047b997c96bf4c3a4d" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc5ef5e94a5352c41b223709fe30c7b7" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="690c9b2684e9bfc4dbfd70433cdedd24" />
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Orc Warriors" id="04dbc210faa765a4e803bc55c8aedc04" defaultAmount="10">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="7" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="1c535a242d0ed68468a931bd47c384c9" />
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="9e885a9704751b144ac2ae01502c86ab" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks />
+    </selectionEntry>
+    <selectionEntry type="unit" name="Orc Brutes" id="orcBrutes">
+      <categoryLinks>
+        <categoryLink name="Battle Line" id="8de131acfdfb9ad4a980a13a79d1c274" targetId="Battle Line" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Orc Brutes" id="151827a2aa15ab9438c11244f31b3b5c" defaultAmount="10">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="11" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="70c75917d0c9a9e48a6d4f51ddf81c0d" />
+            <constraint type="max" value="18" field="selections" scope="parent" shared="true" id="0ba40730b9badd840b88b7c5b1bc5254" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Greatweapon" id="1b8edf6c9b2ff8141a3b094fbaddd4ef" type="selectionEntry" targetId="greatweapon">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ae1077813dbfc74bbb6402857c60c4b" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bade0d8245b4e9148b2fd3b084df80db" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Heavy Armor" id="68c3919835832f043929760221457d3d" type="selectionEntry" targetId="heavyArmor">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30b76a60ac34c9744b2e85690bd64fc1" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="939e44e4ac141214693b0749a4b5d942" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Goblin Mob" id="goblinMob">
+      <categoryLinks>
+        <categoryLink name="Battle Line" id="b9e9d0d3f063f6b4fa2fa9646b6a2fc6" targetId="Battle Line" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Goblin Mob" id="85298b277efc952479da658c815f3a38" defaultAmount="15">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="4" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="15" field="selections" scope="parent" shared="true" id="f0d8e48865c726b4095ef0cf081ca3d8" />
+            <constraint type="max" value="25" field="selections" scope="parent" shared="true" id="e4df5f551950774438ed38f97748d106" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Hand Weapon and Shield" id="104cda95d999b6245a875b12386d3316" type="selectionEntry" targetId="ccwshield">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe483d787d904d449a3d7c7b44f7ce04" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f265c3d09861aae4d94e5d037e81491e" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Goblin Spear Mob" id="goblinSpears">
+      <categoryLinks>
+        <categoryLink name="Battle Line" id="3e70fd472c1789844bb162559d2f7083" targetId="Battle Line" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Goblin Spear Mob" id="d684231c1d8dbd64c9b5ddb99c46612d" defaultAmount="15">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="4" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="15" field="selections" scope="parent" shared="true" id="7392b23d8cefa7e41b4b25edaa8b5105" />
+            <constraint type="max" value="25" field="selections" scope="parent" shared="true" id="19702df7059841e4489a814b7d100ead" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Spear and Shield" id="d5106685d2fbf9648bc9545b7a301fb4" type="selectionEntry" targetId="spearshield">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb781a2bc98a07d4f9d87d4f9d6819ce" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2efabcc973b1ce243bedcd71d949ee84" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Boar Riders" id="boarRiders">
+      <categoryLinks>
+        <categoryLink name="Raiders" id="6a95df52fca906c41b1209c225c76fb8" targetId="Raiders" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Boar Riders" id="c65dce93de90b0e4b966c18668f38042" defaultAmount="5">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="19" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="30049e4381c98494ca349e44ce28aaf5" />
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="ac51590407ff09042b3cde16a02703a2" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Hand Weapon and Shield" id="5e1c3e111f942b845904f19cdb4f4725" type="selectionEntry" targetId="ccwshield">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab8e69e74c07c764d88f2c5d5d1edfc9" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="744c76ed80a811e4cb44a73d34e7ca07" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Goblin Wolf Riders" id="goblinWolf">
+      <categoryLinks>
+        <categoryLink name="Raiders" id="72170fac819bea14b992f4b35966a3c1" targetId="Raiders" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Goblin Wolf Riders" id="91441ba7dc36fcd4da06daed79534bef" defaultAmount="5">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="12" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="61f5ba204e8015f4a84133946b73d026" />
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="3d5881d69572538419011f0a56be1d15" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Hand Weapon and Shield" id="276106779a2bb9348a5b2516eccaeeb8" type="selectionEntry" targetId="ccwshield">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d77d6866738ad2459e16c4dec7a95c6" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bc1d392d1f3a324792479fd60bf24ea" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Shortbows" id="7714c662ef043a14f925ebb79ae94b85" type="selectionEntry" targetId="shortbow">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="90a08f5069deb2844961c9e680e8f65c" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be328aa0366f8c64685ea63a64ffe49d" />
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="2" field="268a-a403-0d9c-50ac">
+              <repeats>
+                <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink name="Swift" id="5fa5eca8e58342a44b6b3187fc012bc7" type="selectionEntry" targetId="swift">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92ed13971f432f1458849bfdc459e0fa" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04e426577d59ce946b0697176bb39689" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Orc Boar Chariot" id="orcChariot">
+      <categoryLinks>
+        <categoryLink name="Raiders" id="d10dc72365e4fd3469e8f7c3d2502e15" targetId="Raiders" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Orc Boar Chariot" id="d363d5ea3e2e4df439b0a5d35b1e6002" defaultAmount="1">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="55" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="090c9f239d217e147941ab5192ef421c" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e94d9304a88b36842b5ed4186c09383f" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Hand Weapon" id="7c57d8bf5300c09468f1fcae557dbc05" type="selectionEntry" targetId="ccw">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1916dc8012bfeea4f96fb4370e3d0520" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="437e9d36244a96b45b78aa99a71a58c0" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Crushing Charge" id="449256f9b35fd25488292c63d76a6462" type="selectionEntry" targetId="crushingCharge">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="411516061662bdb4d8799c6c79387439" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ecedb1a3c7b4814ea18d9104425ac0b" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Goblin Shortbows" id="goblinShortbows">
+      <categoryLinks>
+        <categoryLink name="Ranged Support" id="6abd2e5036616f94da50ee6454108d74" targetId="Ranged Support" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Goblin Shortbows" id="b2e9d9848757d544a81adb02e0da8eda" defaultAmount="15">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="6" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="15" field="selections" scope="parent" shared="true" id="8383d7c13ad2ff040809f10d5e9721a9" />
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="38ae0d4337a1dbb48bd103b15c48f70f" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Shortbows" id="decd47ecfae76434fbb0bd36e947f69c" type="selectionEntry" targetId="shortbow">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4021866bd742ed2478cc7b11c769fc93" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf063a312f3c5984681eb67b64429dc2" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Goblin Bolt Throwers" id="goblinBoltThrowers">
+      <categoryLinks>
+        <categoryLink name="Ranged Support" id="de6880a3acb3c4d43906cd65cb85d6d4" targetId="Ranged Support" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Goblin Bolt Throwers" id="768a164dd2f9e2b4f9501025af56931f" defaultAmount="1">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="40" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e4531885f29ad8438e69dcfae9c3e4a" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="197016f13ab2d4d4d9538b23c0134151" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Bolt Thrower" id="151cf598ea719cc4392dd66abb0408dc" type="selectionEntry" targetId="boltThrower">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a021b2f515f7d143a25a39eede4cf1b" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80860aa06d79dc84880c122e558d3a1d" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Lethal Shots" id="2f62184192c684e44a2e791366965826" type="selectionEntry" targetId="lethalShots">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f3a3f16d36ac21649852aa4d86fc488d" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f672579181ac96c469c56a12dcdc33b4" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Protected Crew" id="b46a0aa2dd41d8246b90c4bdccf62fa4" type="selectionEntry" targetId="protectedCrew">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d91b4a9c38ddf2b4f8af3f97aa632388" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab1392a739c0c094283633f047ea32e4" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Reposition" id="273eb2cef51a9b24f99dd88d551d350e" type="selectionEntry" targetId="reposition">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f2c5cde37bb9804aa3d847f2baca4bf" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0dd083c59bc7f62418c5b87cc6aebca9" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Goblin Stonethrower" id="goblinStonethrower">
+      <categoryLinks>
+        <categoryLink name="Ranged Support" id="4174e7526a0059c4da1d268475d98507" targetId="Ranged Support" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Goblin Stonethrower" id="4b8f745c3616beb4a9b6405d96d5d979" defaultAmount="1">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="50" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06b6ee4b0e660c0469ed14d779e69527" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec77972823c1ac940ae0797ab9dcc2ed" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Catapult" id="17e4242e656fb1148bb8719d02b808f2" type="selectionEntry" targetId="catapult">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9ee786df3019c04481471f7302ccfdc" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="513c55f80ca1ac2429ab8c4a7b53d91c" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Protected Crew" id="080a67fc00e20674c8505ce649f43545" type="selectionEntry" targetId="protectedCrew">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fcbf6d1aa0a72f418e73c89ed58bd1e" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e51db2643f040443ade142c9ad51da0" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Reposition" id="c67f800307df0a945ab2d4ab1be62169" type="selectionEntry" targetId="reposition">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f8c9bc7c4469444bb13d3f02971a9bd" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73ab844b295249d43a1029479e56b9c6" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Trolls" id="trolls">
+      <categoryLinks>
+        <categoryLink name="Big Stuff" id="a79a3d335f8b9854dbbb5cba9dbb3063" targetId="Big Stuff" primary="true" />
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Set" id="796321b0d871da44ba67523896f11d42" defaultSelectionEntryId="ccw">
+          <entryLinks>
+            <entryLink name="Hand Weapon" id="579ad46f02b3c05479a45ed8cd38540c" type="selectionEntry" targetId="ccw">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aae50aedee8fc5c45b6e14c454b2729d" />
+              </constraints>
+            </entryLink>
+            <entryLink name="Greatweapon" id="bce70cdf69a76e54a9c9e41e1ef39e58" type="selectionEntry" targetId="greatweapon">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81f8476e37ab3b248888f85241d2ded6" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="5" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23083b350408d7b4a81a05dc09d79e2b" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1efb15821b22324ba57ff2186118b43" />
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Trolls" id="1f586bfed7bd9584ea849d22dd693ba7" defaultAmount="3">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="26" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="794d6914f9053bc4391c9ce2e96cbdb4" />
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="d367c08c8ce9935448d0e583066980d7" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks />
+    </selectionEntry>
+    <selectionEntry type="unit" name="Giant" id="giant">
+      <categoryLinks>
+        <categoryLink name="Big Stuff" id="d5c762943ada7484f88c4cc1ce171435" targetId="Big Stuff" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Giant" id="761e8344bf4aad440866ac413db94576" defaultAmount="1">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="100" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8c749fee3f811f42b818c00048f4592" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8e093407e071324c846aacd75df5242" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Hand Weapon" id="ee996048198f5374ca1ca98733272e8f" type="selectionEntry" targetId="ccw">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e7e0a2c5624ecd642a24f47de4a82909" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12ae6e89843d52849afbc7e6d603830a" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Fearless" id="7f06de5a48b37424b803fe7834f8eee4" type="selectionEntry" targetId="fearless">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="939ce0ae1af3ea84e9093b5f80434a35" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc9fb9f19548c3b4993b7e03afd17177" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Wyvern" id="wyvern">
+      <categoryLinks>
+        <categoryLink name="Mounts" id="c57a585d67f82cf49b36675ea39e734e" targetId="Mounts" primary="true" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Wyvern" id="45473d128c47b2d4ebe96c53a5f1dfd5" defaultAmount="1">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="55" />
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44d9c0c7cbf029e4d98254e617dd746b" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a066f394cd2a9c34e98b9c6000133681" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Fangs" id="5649a67bcd160154eaf22d6a3a804388" type="selectionEntry" targetId="fangs">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f9c1e903eacf3a74f98a1296b0b1e30d" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6950b7bf091b9b14da5700105c1af027" />
+          </constraints>
+        </entryLink>
+        <entryLink name="Flying" id="d4d355fdb8adc7b4c8e8a53b4c2fdfe8" type="selectionEntry" targetId="flying">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a36fc5e0b1102f4ab29ebf50e5f43d2" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c205f4f75f2040c42858def4169ef6af" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="War Chief" id="warchief">
+      <categoryLinks>
+        <categoryLink name="Commanders" id="f1e2ae2ab0813914c86f4a7177e7dce4" targetId="Commanders" primary="true" />
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Retinue" id="5b6969cd3f166c640819a1bdcbaf5834">
+          <entryLinks>
+            <entryLink import="true" name="Orc Warriors" id="f864215b10c7a1c4f9794a6c5f5d8f26" type="selectionEntry" targetId="orcWarriors" />
+            <entryLink import="true" name="Orc Brutes" id="e82d218d68468914d9b9c23471a4d95d" type="selectionEntry" targetId="orcBrutes" />
+            <entryLink import="true" name="Boar Riders" id="def05318caa8a4942b713dc6c443ab7b" type="selectionEntry" targetId="boarRiders" />
+            <entryLink import="true" name="Orc Chariot" id="003ea34cedb43214094dc24eb59bc9fe" type="selectionEntry" targetId="orcChariot" />
+            <entryLink import="true" name="Wyvern" id="5abb4dce9a1d4c6499a8305f4e73a8d7" type="selectionEntry" targetId="wyvern" />
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="837f94a8899d5594bb6c48e9a1fc6178" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38e510772d54eb5459af637b39525a65" />
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon Set" id="d5d7f1b175eb5594b8dab99da3c7890a" defaultSelectionEntryId="ccwshield">
+          <entryLinks>
+            <entryLink name="Hand Weapon and Shield" id="17acf15b0a7b30543bd8e4b0ade14374" type="selectionEntry" targetId="ccwshield">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="259a9a4e192b18241b33bf698f16eb98" />
+              </constraints>
+            </entryLink>
+            <entryLink name="Greatweapon" id="037b7bab725adec469965d12de4a7fee" type="selectionEntry" targetId="greatweapon">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f10b3fc1d9578d4f95baa7b6a473f50" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="5" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Two Hand Weapons" id="f9638f79ce02975428a4f905c73ffbdf" type="selectionEntry" targetId="2CCW">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="423b608ed7a635a4ca104b0bc7cfc8e7" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="5" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d88b1774c015d274d90c4804aca18167" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cd14144e67c22546aa097920ed518cc" />
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="War Chief" id="518a54459d1ed3a4fa37adefa9118638" defaultAmount="1">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="50" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Warcry" id="94a0aec0f3299504e8ca59d2a59f2e5a" type="selectionEntry" targetId="warcry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95179c801fb1d1543b9dc62ef3473683" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="765c64450f7fbde468fe6872d0123c9f" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Goblin Shaman" id="goblinShaman">
+      <categoryLinks>
+        <categoryLink name="Commanders" id="a660c5b9d0a494145a4a26b8277be67f" targetId="Commanders" primary="true" />
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Retinue" id="c886d0f3493afa544a1e84cd2b32ff7b">
+          <entryLinks>
+            <entryLink import="true" name="Goblin Shortbows" id="6c983c50e462ada4bb4a6a0a78917c98" type="selectionEntry" targetId="goblinShortbows" />
+            <entryLink import="true" name="Goblin Mob" id="3b4f2492517fa8045b0db75d9375a854" type="selectionEntry" targetId="goblinMob" />
+            <entryLink import="true" name="Goblin Spear Mob" id="25f94f36bcd18704e972a12da2693a41" type="selectionEntry" targetId="goblinSpears" />
+            <entryLink import="true" name="Goblin Wolf Riders" id="1bdabbcf617a5d34ca3739a1143051bd" type="selectionEntry" targetId="goblinWolf" />
+            <entryLink import="true" name="Orc Chariot" id="3bf50d6d0056dca42b5678ab32a7e24f" type="selectionEntry" targetId="orcChariot" />
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8373559e3fb10f2448ac664035b94f5e" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d228628a598d51f4cb842884a3a6475d" />
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Goblin Shaman" id="50e25822ae555404c8c4ed3465ec03af" defaultAmount="1">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="35" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks />
+    </selectionEntry>
+    <selectionEntry type="unit" name="Goblin King" id="goblinKing">
+      <categoryLinks>
+        <categoryLink name="Commanders" id="9983bf35626b07e43b11fbf09ca38ea7" targetId="Commanders" primary="true" />
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Retinue" id="d9b3563c70c4a1640908c6865815495e">
+          <entryLinks>
+            <entryLink import="true" name="Goblin Mob" id="d5b5df1531f54364e896269b44ddcea1" type="selectionEntry" targetId="goblinMob" />
+            <entryLink import="true" name="Goblin Spear Mob" id="bd115c104b1fd004796eb2018f993e5a" type="selectionEntry" targetId="goblinSpears" />
+            <entryLink import="true" name="Goblin Wolf Riders" id="efcb8fead50fbe54f87cd896a14a3c04" type="selectionEntry" targetId="goblinWolf" />
+            <entryLink import="true" name="Orc Chariot" id="fae328b3b9643fb4399239302eae649f" type="selectionEntry" targetId="orcChariot" />
+            <entryLink import="true" name="Goblin Shortbows" id="bae521bdcc7aa53498633a3afd1d5fa4" type="selectionEntry" targetId="goblinShortbows" />
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d72cf7bc139f98d4eb97836e2905c915" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04345668d18f0f14b9d96c17d2926975" />
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon Set" id="519bb12c2bd6fad46834d04119df9127" defaultSelectionEntryId="ccwshield">
+          <entryLinks>
+            <entryLink name="Hand Weapon and Shield" id="2a6552d5ac648d2489f3cbdbc679c321" type="selectionEntry" targetId="ccwshield">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b160a5ddd4708748955cde959db4e74" />
+              </constraints>
+            </entryLink>
+            <entryLink name="Greatweapon" id="954e85fc271d81141a57ab623f6528d3" type="selectionEntry" targetId="greatweapon">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f849805ea987c42b7b84cc3a91d5d1" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="5" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Two Hand Weapons" id="c815c82842c99dd4a96b65613c0c39c2" type="selectionEntry" targetId="2CCW">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b62c2ec8b8c93ba4daebf77fef449616" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="5" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89139d0c03f4e2b4b81d18bf737e2455" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd77237e4bc65a64886bfd48d95b40cc" />
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Goblin King" id="af7c28a98be24414397b237768311d49" defaultAmount="1">
+          <costs>
+            <cost name="Points" typeId="268a-a403-0d9c-50ac" value="40" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Power Of Many" id="7cff9002feaea8143a78ed0b52d8ce1f" type="selectionEntry" targetId="powerOfMany">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b73f5b638e625d4bb524202945823b0" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4583de45d1cc68349b8f155137b1d258" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <forceEntries>
+    <forceEntry name="Warband" id="9b27f833d632ff24d8321fdebffca54e">
+      <categoryLinks>
+        <categoryLink name="Commanders" id="2931b79dc8e79e24381a2a0f98f242c3" targetId="Commanders">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="670d85941bcc56f4892b68ab2f0a5770" />
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c956e66967619ba4ca463d0f493f6a8d" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Battle Line" id="c643020b3d5ca3b419375d5f47fede47" targetId="Battle Line">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="af1d1b546b2b005438637eb82dfd3dc5" />
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e16245e2ee6e7f04b86898c3133ce262" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Raiders" id="3c291ddbece24c447b61f78af943a095" targetId="Raiders">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="20ac7b3373b6b6e448b43f0836fe1a80" />
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4d137e2acb99803439f4e6ca627ccb02" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Ranged Support" id="39724f3d54685e84e80ec9296694e26e" targetId="Ranged Support">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="6c83d15944e7a5d4f924dd49ba97bc5e" />
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e54333d3332c2ba409247f98f82766ec" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Big Stuff" id="395cfb149b5857d4eb9fa355e834f896" targetId="Big Stuff">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="8765b154d461f904fb3f194f601f0246" />
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d506687db94d61d4d98ca5002f4e8398" />
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="1719843545dd7834f9a7ea3d57b7cc9a" />
+        <constraint type="max" value="500" field="limit::268a-a403-0d9c-50ac" scope="force" shared="true" id="bae5dbd360ac1484683a0ed101870158" />
+      </constraints>
+    </forceEntry>
+  </forceEntries>
+</catalogue>
