@@ -8,19 +8,19 @@
   <selectionEntries>
     <selectionEntry type="unit" name="Northmen Axe" id="northmenAxe">
       <categoryLinks>
-        <categoryLink name="Battle Line" id="a3e01ece8e377494ca898445336ca6ea" targetId="Battle Line" primary="true" />
+        <categoryLink name="Battle Line" id="26b71e1392c6ab844b63423f62ae69eb" targetId="Battle Line" primary="true" />
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon Set" id="4053616d712bc1f4ab94fcccea83d473" defaultSelectionEntryId="ccwshield">
+        <selectionEntryGroup name="Weapon Set" id="03af6e90bea5361459a882363bea9722" defaultSelectionEntryId="ccwshield">
           <entryLinks>
-            <entryLink name="Hand Weapon and Shield" id="51b11f27b36b40946a4cccd79e09b5a5" type="selectionEntry" targetId="ccwshield">
+            <entryLink name="Hand Weapon and Shield" id="dddbbb35467fadb42ae3f84d30582250" type="selectionEntry" targetId="ccwshield">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b45ab52a2f26a354e997607638cdbe09" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a3f44256f98bf847a2e11bfe039693c" />
               </constraints>
             </entryLink>
-            <entryLink name="Two Hand Weapons" id="bfe33c9a19d3f1948bcce1fe96872f01" type="selectionEntry" targetId="2CCW">
+            <entryLink name="Two Hand Weapons" id="fe2c79576ce14424cbaea4c65210fb4d" type="selectionEntry" targetId="2CCW">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1751c0fcfdf27949b71d69fac212540" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a39f4551d3a74c94d8fe4f7dc4a88d60" />
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="268a-a403-0d9c-50ac">
@@ -32,44 +32,117 @@
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a26e85c876f30b438e5d312994cb896" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0273442f96fe90f4899937b0a66b14f1" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="961cc409a1819074cafd4e36b29b9469" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21f8dfc3b6a996e4a8467bfd1ee74225" />
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Banners" id="0110c9e138beaf44580b58c23b726d48" defaultSelectionEntryId="">
+          <entryLinks>
+            <entryLink name="Banner of Swiftness" id="0e6897c0589b87048a92e194c43beaac" type="selectionEntry" targetId="bannerOfSwiftness">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="389f0df8ab536a6498f3cccae4d2c9b5" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="25" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Banner of Fury" id="7dae8eb268e7fb448a8a917446b3f397" type="selectionEntry" targetId="bannerOfFury">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62cb63eaf0c775c4ca3c472781fe1b75" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="30" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Banner of Valor" id="92172c0ea45fe604b936139484720587" type="selectionEntry" targetId="bannerOfValor">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8b374516a9bfbc4c877119c6cd080e1" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="25" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Banner of Mist" id="bb76bcb52a812714da8bb032827c0a73" type="selectionEntry" targetId="bannerOfMist">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b34f47665510954ea568527941dfc35" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="25" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="War Banner" id="0882f2fbbe83c1841bf8d104d29cd629" type="selectionEntry" targetId="warBanner">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ef266662348ae64ea96dd6dae0e4672" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="35" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Cursed Standard" id="85cc0f445e58f4247bb3f9124662ecb6" type="selectionEntry" targetId="cursedStandard">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f63e4ff96aa37c4ab49c1be8ca420da" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="45" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8fbb307caacd70a41bdf58fa14b4d539" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4e49552bce04cc4ea608b631785d5a1" />
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Northmen Axe" id="856cbdb5b0a75e54683f0b75c7342f6a" defaultAmount="10">
+        <selectionEntry type="model" import="true" name="Northmen Axe" id="566fb1533dd52874d852b7c5ac6d26b4" defaultAmount="10">
           <costs>
             <cost name="Points" typeId="268a-a403-0d9c-50ac" value="6" />
           </costs>
           <constraints>
-            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="debad01b59760a8438b3d4aebc1618d9" />
-            <constraint type="max" value="25" field="selections" scope="parent" shared="true" id="c5753b924b8729e4e8e098fec2762d89" />
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="dc41fc97df0448849b65e9670be4d0f8" />
+            <constraint type="max" value="24" field="selections" scope="parent" shared="true" id="68fea76e21a967a46a4d6db86b60886b" />
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="dc41fc97df0448849b65e9670be4d0f8">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="68fea76e21a967a46a4d6db86b60886b">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="defaultAmount">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks />
     </selectionEntry>
     <selectionEntry type="unit" name="Abyssal Warriors" id="abyssalWarriors">
       <categoryLinks>
-        <categoryLink name="Battle Line" id="2a7e0d84e5d15b44ba457612af4fc7ce" targetId="Battle Line" primary="true" />
+        <categoryLink name="Battle Line" id="97d81e1e6629e8042bd3a51538e6d45a" targetId="Battle Line" primary="true" />
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon Set" id="782317bd0a142e345acae76851abc9f9" defaultSelectionEntryId="ccwshield">
+        <selectionEntryGroup name="Weapon Set" id="179ed944f11c4544f9509a99b3f6c18d" defaultSelectionEntryId="ccwshield">
           <entryLinks>
-            <entryLink name="Hand Weapon and Shield" id="b3afa6fd991b2b34aac6a627660e63f1" type="selectionEntry" targetId="ccwshield">
+            <entryLink name="Hand Weapon and Shield" id="2e63792a596bd2f4c9c769ac89211c81" type="selectionEntry" targetId="ccwshield">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="707823a0e3e0e2d469bca50e73033818" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b72ca28fba9b2184d83c81501fcd9c37" />
               </constraints>
             </entryLink>
-            <entryLink name="Halberd" id="b3f867d8eb63829488941ecdc97e93e9" type="selectionEntry" targetId="halberd">
+            <entryLink name="Halberd" id="44d8196e23488b64eb36653929db4f48" type="selectionEntry" targetId="halberd">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c66d1249969108248b3c30f7353ca869" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b094f304f3f2c64a8787484f1b6368b" />
               </constraints>
             </entryLink>
-            <entryLink name="Greatweapon" id="b75991756bd5de24eade731929846198" type="selectionEntry" targetId="greatweapon">
+            <entryLink name="Greatweapon" id="bdd1614d7c0270d4b8176c4044454934" type="selectionEntry" targetId="greatweapon">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c8dc9bd0710e904780d5dcf6ef189db" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="728e16ad0c23a1f4fa72cccea0817017" />
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="268a-a403-0d9c-50ac">
@@ -79,9 +152,9 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink name="Two Hand Weapons" id="aef9750bb08b2884faaeed3d2f71e999" type="selectionEntry" targetId="2CCW">
+            <entryLink name="Two Hand Weapons" id="964f1fc1924700441b6020adf5add6ad" type="selectionEntry" targetId="2CCW">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d8e9f456db73a84cba7d92867c5ce9e" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1efbdc33d73d0fa42b4f11c81dc1eb6d" />
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="268a-a403-0d9c-50ac">
@@ -93,119 +166,284 @@
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="945b2481a81a3e347a556e7dea9d8f7d" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4649f00dd18e78946aaa21f4450b24f8" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8980a62ea4116d409864645dac98f69" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6d1ca116c7c1904a8f94bebdd0b2afa" />
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Banners" id="49b844751526c4749af34c4bb0b17bbd" defaultSelectionEntryId="">
+          <entryLinks>
+            <entryLink name="Banner of Swiftness" id="6a908378b8a9dd44eb1d69d5cd4478db" type="selectionEntry" targetId="bannerOfSwiftness">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bafb2fb708084e469f8af2b9738999d" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="25" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Banner of Fury" id="38ca477667a37224185d4c1cdd721c2e" type="selectionEntry" targetId="bannerOfFury">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="555f1ba5b83525e4db33edf529c5343c" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="30" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Banner of Valor" id="67b1e80a1014ddd4b918bea0dbea3d83" type="selectionEntry" targetId="bannerOfValor">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c546f41152ed12740be90ef863bcc6a8" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="25" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Banner of Mist" id="3bd19c8ac9ae94148b9ac706a4d28815" type="selectionEntry" targetId="bannerOfMist">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5da1591176eaae74c96b8ca4d10546b9" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="25" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="War Banner" id="ff80cac8fc5daa240b5dee2cbe8ebd9d" type="selectionEntry" targetId="warBanner">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7380ee6bdb3ac764c97cfcd411f951b6" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="35" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Cursed Standard" id="adad7ba067bef3842a61187cb96310b6" type="selectionEntry" targetId="cursedStandard">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38dba5184daeaef468bc70f27f88f0bc" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="45" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1c9f68f29c5044a44aff615a847f1e9b" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de263cd6681fc944c857d4a2d8404755" />
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Abyssal Warriors" id="d070cb4ac9d42734d9b0f0682c40482f" defaultAmount="10">
+        <selectionEntry type="model" import="true" name="Abyssal Warriors" id="6a1958c0944f1164fa1c055e2d70249d" defaultAmount="10">
           <costs>
             <cost name="Points" typeId="268a-a403-0d9c-50ac" value="15" />
           </costs>
           <constraints>
-            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="66b95c5ac70fb074ca8c189414a6e2ff" />
-            <constraint type="max" value="21" field="selections" scope="parent" shared="true" id="70ca986798915e84abb63a12ee298e25" />
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="8e63694dc730aeb4ca9886eca271e170" />
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="6c57b8285730c5140b88d81ce2b81d9b" />
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="8e63694dc730aeb4ca9886eca271e170">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="6c57b8285730c5140b88d81ce2b81d9b">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="defaultAmount">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink name="Abyssal Armor" id="a171f58b6e0460645bf3c1b88727dc5f" type="selectionEntry" targetId="abyssalArmor">
+        <entryLink name="Abyssal Armor" id="b7a3dfbeb28a5fd48bc6da51915826ea" type="selectionEntry" targetId="abyssalArmor">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cac5e76736590b14bb851963307e05c0" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72a9dbffcdbc7ef4685cfa7a65795092" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0340ad5ff8d4e5f4e8461398621002d1" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27b46a3070d773e4cb92ec0e4859e368" />
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" name="Dragon Spawn" id="dragonSpawn">
       <categoryLinks>
-        <categoryLink name="Battle Line" id="54618fb92a1b3784389509484d0e31d8" targetId="Battle Line" primary="true" />
+        <categoryLink name="Battle Line" id="7691e095e91b9d341997bcd15f583ed9" targetId="Battle Line" primary="true" />
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon Set" id="1a45e3a6e9ede0f439495580b8ade791" defaultSelectionEntryId="halberd">
+        <selectionEntryGroup name="Weapon Set" id="1d7e002b6f47e7a4dab6db1b64074d57" defaultSelectionEntryId="halberd">
           <entryLinks>
-            <entryLink name="Halberd" id="4cee6d7ddfcecda40bd0b7e65def5d18" type="selectionEntry" targetId="halberd">
+            <entryLink name="Halberd" id="63fae5efd7c931e41827bf868469b7ae" type="selectionEntry" targetId="halberd">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f3170445d59c8b4bb938ec6e2d15b4b" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e08b1f38298fffb489c55859b3142071" />
               </constraints>
             </entryLink>
-            <entryLink name="Two Hand Weapons" id="d8f8ec92159a865498b81c533afc56b4" type="selectionEntry" targetId="2CCW">
+            <entryLink name="Two Hand Weapons" id="f7af48a4846f94f4c800ade54f892f0a" type="selectionEntry" targetId="2CCW">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6a1215806e9b4c48b7d39996f18d922" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8041caaf66db77e44b10767e83bd925c" />
               </constraints>
             </entryLink>
-            <entryLink name="Greatweapon" id="b71203afb8bc39f438f0baa06c65bc2a" type="selectionEntry" targetId="greatweapon">
+            <entryLink name="Greatweapon" id="5bbc9303bccd35644a49c7a761deccb9" type="selectionEntry" targetId="greatweapon">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e98260b53952e9e4898d4d01bf131df3" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="251cbaac952296443a0ffc9cc9dad259" />
               </constraints>
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="839b99a4282c9b0429ccc5ae916028ca" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff2f26d6837b84e44a12e65d0fb81c99" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1992ec03f6c7eb543847982a6586fbc5" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35d24f14f1f5d8d42bcb5789b6dae82d" />
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Dragon Spawn" id="f24e78e2ecad21f4a8bca2313a493bed" defaultAmount="3">
+        <selectionEntry type="model" import="true" name="Dragon Spawn" id="05f32aa0d056a2d448ff0dedec9006f4" defaultAmount="3">
           <costs>
             <cost name="Points" typeId="268a-a403-0d9c-50ac" value="50" />
           </costs>
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="99c245dbe05da1e46bb2ba4e62b18a59" />
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0326df8c249deeb4aa3f59368230aa0b" />
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b6faee96798d1444ba01aecae85f4c60" />
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="07dcd7fdd72630c4a883c3634a28da15" />
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="b6faee96798d1444ba01aecae85f4c60">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="07dcd7fdd72630c4a883c3634a28da15">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="defaultAmount">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink name="Scaly Skin" id="079fe32d57e27364ca679012bc748e43" type="selectionEntry" targetId="scalySkin">
+        <entryLink name="Scaly Skin" id="a6d1f0d821c7cdf49aeca7af116973f7" type="selectionEntry" targetId="scalySkin">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="45def06c5ab784c47877d835d86d1c9f" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f64e13fcd44ad6041baa73f1d3d85c97" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db6e7b573d4f4fb478ec7b5602be1c5f" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="688da599e057a424d98e22eb0bbbaa3e" />
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" name="Northmen Horse" id="northmenHorse">
       <categoryLinks>
-        <categoryLink name="Fast Attack" id="7027ccc4150c6474eb52f30be2c812cf" targetId="Fast Attack" primary="true" />
+        <categoryLink name="Fast Attack" id="ad3ab62a5568aa947823828779459ff6" targetId="Fast Attack" primary="true" />
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Banners" id="7be73a4d318a1084e946773e6c13dd11" defaultSelectionEntryId="">
+          <entryLinks>
+            <entryLink name="Banner of Swiftness" id="29c47806716f9354688d4440c38ca5f2" type="selectionEntry" targetId="bannerOfSwiftness">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c071f0ad0d3e50478c7d30f8eebe511" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="25" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Banner of Fury" id="5b631352c8a4ecb439e5d1947a519ab9" type="selectionEntry" targetId="bannerOfFury">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e42bb5e164e1da4e9637d869067b610" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="30" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Banner of Valor" id="8a46048a07b1e294d9c7dbda0fac94ea" type="selectionEntry" targetId="bannerOfValor">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29cdf0acaba616d46aad61aba5a495cf" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="25" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Banner of Mist" id="a5dd5fce334e17b41b301a879e995c39" type="selectionEntry" targetId="bannerOfMist">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d75ccef396fcfb43adef2a188a13419" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="25" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="War Banner" id="1f929476e35bcf44f9bd3cda86450078" type="selectionEntry" targetId="warBanner">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10d181a53a86c824f8c3bf9b9a3df2cf" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="35" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Cursed Standard" id="7ddc7b4d5f6371744a0fb3af33923ccc" type="selectionEntry" targetId="cursedStandard">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c55218944f5d12049b664b26c94de23e" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="45" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5c463686a8de6d04487df04d16faf3cd" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56763a00740cb1c468a685c175b1035c" />
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Northmen Horse" id="17e3ab7572cde29489ca02a1727a4fb1" defaultAmount="5">
+        <selectionEntry type="model" import="true" name="Northmen Horse" id="3709ed44e9d5fdf43beb02767caad01a" defaultAmount="5">
           <costs>
             <cost name="Points" typeId="268a-a403-0d9c-50ac" value="16" />
           </costs>
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="c46952c92621c0943a2c430ef6b9fda7" />
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="3eba52f489ba4a14d91bd4fecf4417c9" />
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="88019d72b31ac2e40989097e8ce6085c" />
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="e1cc6c151eaef504c8535074b77d3f64" />
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="88019d72b31ac2e40989097e8ce6085c">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="e1cc6c151eaef504c8535074b77d3f64">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="defaultAmount">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink name="Hand Weapon and Shield" id="82dae2a31444ee241a81fb39a93a95f7" type="selectionEntry" targetId="ccwshield">
+        <entryLink name="Hand Weapon and Shield" id="e7d1dbd4bcb127446aefe41f88160376" type="selectionEntry" targetId="ccwshield">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7d4ac52bd941354b918156f07bfb0ec" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63936390d2ea93946b280c708759a169" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="33f960ed2b320f14eb979e7d196b2f59" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="934b9dc0fe0ff8b429daaf184d126a48" />
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" name="Abyssal Knights" id="abyssalKnights">
       <categoryLinks>
-        <categoryLink name="Fast Attack" id="5b4fb8db223cc3f45999b0d43f4089c2" targetId="Fast Attack" primary="true" />
+        <categoryLink name="Fast Attack" id="314ae3b1cb5510a4994cd7f652d8ab2e" targetId="Fast Attack" primary="true" />
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon Set" id="4a1711713d0fb4e47886aaab786a3e8d" defaultSelectionEntryId="ccwshield">
+        <selectionEntryGroup name="Weapon Set" id="8e52f4ba081a74a4abda4d8a2432b303" defaultSelectionEntryId="ccwshield">
           <entryLinks>
-            <entryLink name="Hand Weapon and Shield" id="ed808011baf33c041a75e1a164f93990" type="selectionEntry" targetId="ccwshield">
+            <entryLink name="Hand Weapon and Shield" id="1d0b3beecb61d6f478401e5193792096" type="selectionEntry" targetId="ccwshield">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26c497ae2bb6e3f459c9d131099f86c7" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="788172c8e32a6a84cb904f0364309c31" />
               </constraints>
             </entryLink>
-            <entryLink name="Greatweapon" id="8a3aa7824de3fb64dacb9cd4ee405015" type="selectionEntry" targetId="greatweapon">
+            <entryLink name="Greatweapon" id="fcef02556ad7e664e8c6d9e94c934da1" type="selectionEntry" targetId="greatweapon">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b61309bde014b5b4f82d0412d2c8782f" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77d8129ca4e14544ca51d3ab7f93400f" />
               </constraints>
               <modifiers>
                 <modifier type="increment" value="3" field="268a-a403-0d9c-50ac">
@@ -217,273 +455,438 @@
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d793cdbc0326c4349b1363f901c85ee8" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1e5f7c491b77864bafad287b00d3d70" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1f64aeb24b7e624c863ee7bed32fe32" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="075d59f82b81ffa41b9dfefb7b54363c" />
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Banners" id="be6df9e619171314eb072fbf5e4420af" defaultSelectionEntryId="">
+          <entryLinks>
+            <entryLink name="Banner of Swiftness" id="05f3aedb10f4ecc4e82f321bf1da7fa6" type="selectionEntry" targetId="bannerOfSwiftness">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffa7ecc934f688a4cad418bf83f62cef" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="25" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Banner of Fury" id="cd9123e88a73d97499bb8c712e54655e" type="selectionEntry" targetId="bannerOfFury">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfc3e62515c06ed4199ba9f394029ce6" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="30" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Banner of Valor" id="e193adc1d587c35469e9734721c477da" type="selectionEntry" targetId="bannerOfValor">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dff784f0a50be524cb8c342d4c1bbe64" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="25" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Banner of Mist" id="0e0670fdeb178494681dbb7a190ef2ba" type="selectionEntry" targetId="bannerOfMist">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c91434948dfaa97459ba6966af75cb3c" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="25" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="War Banner" id="46633923a305ac24aa8baa9f733e28c3" type="selectionEntry" targetId="warBanner">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1385bba54d75e6479496ae06c137ac4" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="35" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Cursed Standard" id="cc0ed23141c5d544aa432aa28c2c1d97" type="selectionEntry" targetId="cursedStandard">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d47ed1f1b03b21443ba3ac84da9f365a" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="45" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="96c6ff8442d2dc74d91e564a5682cb2f" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ab631bbdc8d98842badacfb26a10ede" />
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Abyssal Knights" id="88dd43267048c7e43b6c250c07595cf0" defaultAmount="5">
+        <selectionEntry type="model" import="true" name="Abyssal Knights" id="7c9aee8fe4f6ca44193ceb38907a312f" defaultAmount="5">
           <costs>
             <cost name="Points" typeId="268a-a403-0d9c-50ac" value="35" />
           </costs>
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="931b77a2876de3544988814a26d5be3c" />
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="9fd21a15b8861be439bb4dfbac87f098" />
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="1fa8b8d838cccbc4da2b743ae4535819" />
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="7ad7c96aa2c3be44f82f50b14b72002f" />
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="1fa8b8d838cccbc4da2b743ae4535819">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="7ad7c96aa2c3be44f82f50b14b72002f">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="defaultAmount">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink name="Abyssal Armor" id="0331afaec8c7a16408f779bb32be2a44" type="selectionEntry" targetId="abyssalArmor">
+        <entryLink name="Abyssal Armor" id="7750bf9d9c35976438b042e9728b8cea" type="selectionEntry" targetId="abyssalArmor">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="45c6f80890feb3e469aab45b4ca9b3d8" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c46cae385cc9be498570aea134864dc" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e387550b5d1ee484a8383a526aaa2fe4" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="906c078ed43edda4eb910e9959f47dda" />
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" name="Abyssal Hounds" id="abyssalHounds">
       <categoryLinks>
-        <categoryLink name="Fast Attack" id="ee551d75a589efe4abe24d2300265e53" targetId="Fast Attack" primary="true" />
+        <categoryLink name="Fast Attack" id="34245789f076eba4383ad96c23f299a3" targetId="Fast Attack" primary="true" />
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Abyssal Hounds" id="f18e1d18f5e56b045b03fd7f896f4cf0" defaultAmount="5">
+        <selectionEntry type="model" import="true" name="Abyssal Hounds" id="8131bf861a0937144aa6ac3945c744fc" defaultAmount="5">
           <costs>
             <cost name="Points" typeId="268a-a403-0d9c-50ac" value="10" />
           </costs>
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="8b4092d76c414ec428c765c84251697c" />
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="f153ed81f16b1c342b2140d3bf33f56c" />
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="caa2dce4568c8274b93828328d13000a" />
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5c4be633ca8579e4884188a102d968e4" />
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="caa2dce4568c8274b93828328d13000a">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="5c4be633ca8579e4884188a102d968e4">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="defaultAmount">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink name="Fangs" id="d1c8e7ec8fce8a84391b3950c4d60fc2" type="selectionEntry" targetId="fangs">
+        <entryLink name="Fangs" id="fe29087b8a4e3cf4689c2b30f6f2a72f" type="selectionEntry" targetId="fangs">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69ec01280698bb946ac63598502aba24" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="186fca8beaca5a0479c2aecbf0092c81" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="56d3058fb7e2b46488f84797e4dbae9a" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30c365e480f948849ac5982b59caef68" />
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" name="Abyssal Chariot" id="abyssalChariot">
       <categoryLinks>
-        <categoryLink name="Fast Attack" id="60391e26651d5d24e955fa089fa7ebc0" targetId="Fast Attack" primary="true" />
+        <categoryLink name="Fast Attack" id="b6c504b5f4c93c04ba147adf102df070" targetId="Fast Attack" primary="true" />
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Abyssal Chariot" id="5be711eb7ea10f1438a58c946a4d9bbe" defaultAmount="1">
+        <selectionEntry type="model" import="true" name="Abyssal Chariot" id="ed89cd77649795948833ea46cbc36a0c" defaultAmount="1">
           <costs>
             <cost name="Points" typeId="268a-a403-0d9c-50ac" value="65" />
           </costs>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="134310a2ddbb4a04ebbe45fd49839417" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eed89ac449e4fc640be6dc80e12fa817" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="33890bcc2b77b674e9bc8469379ecac6" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11274c0f5b160f043941531d2374f81e" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink name="Hand Weapon" id="c6e94ed4b7ac7a748980982596e757f6" type="selectionEntry" targetId="ccw">
+        <entryLink name="Hand Weapon" id="1977c33ea9f59c84caa33c157c62aaca" type="selectionEntry" targetId="ccw">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9677323a9b4f1bc41a7a3af345f9b2b8" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45aa18b2cc2fb0348be7e9cdff30736c" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fbbffcb6dd7dbf14ab3c9d6d8e07f978" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="615a241ffa77cc4419c8a842c7707f3a" />
           </constraints>
         </entryLink>
-        <entryLink name="Crushing Charge" id="703970c3d24964f4a81f1fe3ee5fc169" type="selectionEntry" targetId="crushingCharge">
+        <entryLink name="Crushing Charge" id="d50a76edbb34020409af5837299e0644" type="selectionEntry" targetId="crushingCharge">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a5b8bd9266a37c84e899b584dcdbd36f" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19eafcdd05f565244a3cef8d0abbbdf5" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0734181639a0fe5459f6182f68ef3a2d" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53239e72c955ff04fa2cdf116f26af17" />
           </constraints>
         </entryLink>
-        <entryLink name="Abyssal Armor" id="bd4988db313f06f45b6fc72b67f4c245" type="selectionEntry" targetId="abyssalArmor">
+        <entryLink name="Abyssal Armor" id="3e9a92a6e1b5ccd44815619da79704a5" type="selectionEntry" targetId="abyssalArmor">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4049a80b815f3304c932eee2a04243f6" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f7e7b41c09bd9e419bacf69724522dc" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b58386a5e7fdbd34b863b2ce00461151" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5c7559b8acf2214cb71ae489a87bddc" />
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" name="Arch Devil" id="archDevil">
       <categoryLinks>
-        <categoryLink name="Demonic Allies" id="36d5905417bb21a46a06709e34669ca8" targetId="Demonic Allies" primary="true" />
+        <categoryLink name="Demonic Allies" id="e4c7ec20f17ca6e4faa38236983cf04f" targetId="Demonic Allies" primary="true" />
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon Set" id="d72b70dea90d74740a1149fd2b001de6" defaultSelectionEntryId="greatweapon">
+        <selectionEntryGroup name="Weapon Set" id="6b07736009a42db42bb8ce481d94601b" defaultSelectionEntryId="greatweapon">
           <entryLinks>
-            <entryLink name="Greatweapon" id="40e68edd776c3cb4fb44a3bcafc23a9b" type="selectionEntry" targetId="greatweapon">
+            <entryLink name="Greatweapon" id="9bd6705dcf9ca1c44ae68642bc4c7d41" type="selectionEntry" targetId="greatweapon">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0761e870521b144e88b046721399caf" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e22b4e678d6bc704385c23769fbce97d" />
               </constraints>
             </entryLink>
-            <entryLink name="Two Hand Weapons" id="2306b74733e8dc848b883136038869f1" type="selectionEntry" targetId="2CCW">
+            <entryLink name="Two Hand Weapons" id="8c8a51d6c7a455847923090676a8a633" type="selectionEntry" targetId="2CCW">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9d30ddcf0a864f4ea305aecbacf3e03" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36acd6289ef26894aabff3c1d763c568" />
               </constraints>
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8741de874641d954fb1022facef3beb5" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1317c8d9a84bc54e99ac034ce1559c2" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f374b74be11c57e43a88584851febbf7" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49aefcf85108cde4ab697922b30f478d" />
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Arch Devil" id="886967bdbb5aa624b8239796d3bb7ba1" defaultAmount="1">
+        <selectionEntry type="model" import="true" name="Arch Devil" id="e2623914ede76d24f90b4f8f5620fb04" defaultAmount="1">
           <costs>
             <cost name="Points" typeId="268a-a403-0d9c-50ac" value="150" />
           </costs>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="42645e660bcb9ed45b58ee0df432b944" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d875079ab5ad380469efdd3035ab7b28" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f50a8e19718c7564fa64a90bb366c106" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cb5e932a9ac14342b08588495d237a4" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink name="Fearless" id="f5db735c1cc081c44ac1360076c6c86d" type="selectionEntry" targetId="fearless">
+        <entryLink name="Fearless" id="8706dd846b8887b4a984bdb155a89456" type="selectionEntry" targetId="fearless">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa227598c40736442ba646b9563bc61e" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36a793af5ba56464eb2c45375729471a" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73a0a3a7524c1484cbabc4cada3caa84" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2a3792ce7d828e45a816fad3209ca82" />
           </constraints>
         </entryLink>
-        <entryLink name="Frenzy" id="3d61027113a49644ea36560bdf2d8d01" type="selectionEntry" targetId="frenzy">
+        <entryLink name="Frenzy" id="fe7fe06764b864248966eb955603ba7d" type="selectionEntry" targetId="frenzy">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="534d2d8a17354804a9863582a6df7d22" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f33670e7e0edd24097b1da0533bbeb7" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a6701dea773b5746945ee0e6216237e" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="735fd8b19ef255f4b8bad8a98fe33ca1" />
           </constraints>
         </entryLink>
-        <entryLink name="Flying" id="5442322f6933d544abb919d5c175026f" type="selectionEntry" targetId="flying">
+        <entryLink name="Flying" id="a396a7c69a974eb48b7ebba2b2a67523" type="selectionEntry" targetId="flying">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="057c9d64de9daeb47aab9c037332dd8b" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88922c6a99bbf81419722faea6cc8900" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9f64a6fb24117f4498e707df5186000" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="553bae4084d7c5147b17f07d159ed050" />
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" name="Devil Spawn" id="devilSpawn">
       <categoryLinks>
-        <categoryLink name="Demonic Allies" id="3ec0e898601b2534c9fd60ace3ea0c59" targetId="Demonic Allies" primary="true" />
+        <categoryLink name="Demonic Allies" id="96717ecdcc6443141888e07851ea35b5" targetId="Demonic Allies" primary="true" />
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Banners" id="c271b5e07888b6d4caec2c3c68fc3836" defaultSelectionEntryId="">
+          <entryLinks>
+            <entryLink name="Banner of Swiftness" id="6334f90fae622fa46ae7dada70711868" type="selectionEntry" targetId="bannerOfSwiftness">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcacca4f7df5d754bacf7f8e6c7fedac" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="25" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Banner of Fury" id="9a117da5f75120b4f9c64f4a9dd74c42" type="selectionEntry" targetId="bannerOfFury">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32641a681b6301845b7ad90eb7f1a22f" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="30" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Banner of Valor" id="d2dcbf4d909986649b0f44160e9b5515" type="selectionEntry" targetId="bannerOfValor">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ec424f89de96584db5fe98bb17d11b4" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="25" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Banner of Mist" id="c89e4719a75ccf84bb6257d82d431c38" type="selectionEntry" targetId="bannerOfMist">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9e4de515d94bf94dbbf75fbc551afd0" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="25" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="War Banner" id="eebd2a06066eaca49965c6c84ee76f9b" type="selectionEntry" targetId="warBanner">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d13c4dd2417f4842a3051048d1dbd02" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="35" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+            <entryLink name="Cursed Standard" id="6e4b1014a4016574c8faddd311969ad7" type="selectionEntry" targetId="cursedStandard">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5278268753257d24c96a0500042539bd" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="45" field="268a-a403-0d9c-50ac" />
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3c109e59d70420d47949335c24770e06" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e7b58f20c484e44aab6ac79b896f4ba" />
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Devil Spawn" id="1db25166fc97d4e45a45efcf2067d1f1" defaultAmount="10">
+        <selectionEntry type="model" import="true" name="Devil Spawn" id="349d7f6eb80f907439f8afbee45a2a8c" defaultAmount="10">
           <costs>
             <cost name="Points" typeId="268a-a403-0d9c-50ac" value="15" />
           </costs>
           <constraints>
-            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="0f508bc33b87d224b8c306342af531fa" />
-            <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="73225670b21408b4199e5bac1a6a40f7" />
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="be33a2819d4afca4ca130d48141a0182" />
+            <constraint type="max" value="14" field="selections" scope="parent" shared="true" id="8fb94cf38bfcc2c46b977871d4b55bde" />
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="be33a2819d4afca4ca130d48141a0182">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="8fb94cf38bfcc2c46b977871d4b55bde">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="defaultAmount">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="Commanders" shared="true" />
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink name="Greatweapon" id="1190280d84001cd42ac2cd8944a53c2c" type="selectionEntry" targetId="greatweapon">
+        <entryLink name="Greatweapon" id="94f1484f5d9018b409a7c10dbdf5ad7f" type="selectionEntry" targetId="greatweapon">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f82b34818aa01af4b9f6d9daeb591705" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96ea43f5cbfd0a342beb8dec11daddba" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="726137a3131dfe54987a1e269c2d6c99" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a3eefc9463f9d84cbcb1ea127400bc1" />
           </constraints>
         </entryLink>
-        <entryLink name="Frenzy" id="5c01d2dfc427ae04a8aca822e7f212aa" type="selectionEntry" targetId="frenzy">
+        <entryLink name="Frenzy" id="dc91e9f8041643743b28595f98c1575d" type="selectionEntry" targetId="frenzy">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f03976c01ddf5864cad2909dac1d93de" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95b42d6af2c082f4c99e70138e8fb643" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2701101a5f6807545ab2d32f7deb05d6" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a45bb56bf5dc8664f936ef4d5c54230c" />
           </constraints>
         </entryLink>
-        <entryLink name="Fearless" id="46214dd77fbc21740800029e398e8017" type="selectionEntry" targetId="fearless">
+        <entryLink name="Fearless" id="8bfadde4fcec6814a9ed30b21dbf8f14" type="selectionEntry" targetId="fearless">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a578ed735aee28440bd45f1f8d27ff80" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1307ab1feb6cef24a9a2b5c66dad62b4" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="052c0dd150f2da54e96dab73476a1a9e" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fbbb2694ca875b4c8b9035afd449b7c" />
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" name="Abyssal Dragon" id="abyssalDragon">
       <categoryLinks>
-        <categoryLink name="Mounts" id="1323a67e8ddaa5b4bb4220997a2edd54" targetId="Mounts" primary="true" />
+        <categoryLink name="Mounts" id="e04d54a917ca4cd409e9971ee90520ef" targetId="Mounts" primary="true" />
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Abyssal Dragon" id="0103ad5d3e5975344941740ed76faaa2" defaultAmount="1">
+        <selectionEntry type="model" import="true" name="Abyssal Dragon" id="48d39d8bcf5b64841a6039cb72422f21" defaultAmount="1">
           <costs>
             <cost name="Points" typeId="268a-a403-0d9c-50ac" value="150" />
           </costs>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d953201a08609104ab5aa1b7d122a71d" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef071e9b263f11d478b92ba2be1bcd35" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4fd3c22a86ca6347b24558ce81aa5dc" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6ba6fcde6c62784192935d597b7ec76" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink name="Fangs" id="cf34bdf75b671db409b287159acf1cbd" type="selectionEntry" targetId="fangs">
+        <entryLink name="Fangs" id="e04f5a66cf008b54dbc6c8bb92e25ccd" type="selectionEntry" targetId="fangs">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="073bae69a9ced754a85dcdf2370a8b5e" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bbe4b1f87f53a54e98ecff61d896297" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1593508b24cc84b4780df5accb316612" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68bb54c5ae4ef7649ac3b8d04cd2ed35" />
           </constraints>
         </entryLink>
-        <entryLink name="Fire Breath" id="4ebd8e0584bf0ab45a3476ab94884fcf" type="selectionEntry" targetId="fireBreath">
+        <entryLink name="Fire Breath" id="809989e6641e5ce44ac73f5b26196c02" type="selectionEntry" targetId="fireBreath">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c46dec513612fe40b769aac98b6ba10" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34a67fe82c56b2d40b490c30fba279ca" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9268dbfcdf0fc14f88ca2f361eb0cee" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea4ea62d2d7738d46aa8c52294a699ba" />
           </constraints>
         </entryLink>
-        <entryLink name="Flying" id="03bf854ae6c3a264aaae3cb8025b10d3" type="selectionEntry" targetId="flying">
+        <entryLink name="Flying" id="cf1c68a9e47d69c4e8789743bdc2bc2a" type="selectionEntry" targetId="flying">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50875675e86eb41489ec16a57985fe15" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f251e39d07ef54c43b8b8c9186db85f9" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c63a2d30f44616049851f3de8af07643" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e097a19bb05d9bb40ac89e1da25d0a4f" />
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" name="Manticore" id="manticore">
       <categoryLinks>
-        <categoryLink name="Mounts" id="37cfd625f3627d14b928935454d605d7" targetId="Mounts" primary="true" />
+        <categoryLink name="Mounts" id="df6d8c4a9064420438e1c46f7d1d86a1" targetId="Mounts" primary="true" />
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Manticore" id="d627982a01516c54a83023521fc4042e" defaultAmount="1">
+        <selectionEntry type="model" import="true" name="Manticore" id="96b0789da822acb4ea92eab26dfb3b99" defaultAmount="1">
           <costs>
             <cost name="Points" typeId="268a-a403-0d9c-50ac" value="65" />
           </costs>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57c4df51870653444896b75bbc2aac8c" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1542ca0c4b278e041bb82f64770f4bae" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a10b2aaf70cb184b9388cab1b1be00c" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddd34579528e84341afd4c046b23b8b4" />
           </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink name="Claws" id="2fd5f1978d3bbd247beea477587f5691" type="selectionEntry" targetId="claws">
+        <entryLink name="Claws" id="6003a650f56275549988a9d215f2c680" type="selectionEntry" targetId="claws">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca22f7b588b9d2643a7daf2624963c1a" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6580453bb7b487c4390d92785fc93c57" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edf4f78eb66e2d34680bd12be39714b7" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd3f49d484b6c0841b65bfc253fe2478" />
           </constraints>
         </entryLink>
-        <entryLink name="Flying" id="30bbd8c9f8dde0a4bae6c7ea777549c3" type="selectionEntry" targetId="flying">
+        <entryLink name="Flying" id="a737d38aaa8bf2245b3dc0a90e8f757a" type="selectionEntry" targetId="flying">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e8e16d5442752084d8c8b6fac1f7a3c4" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="833f385a1f991e94bb5acd92810cb2a0" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="503ead8de112f594e97f64143b8f75df" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89f5fc0726482d84cbb1c8b188d14f0b" />
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" name="Abyssal Champion" id="abyssalChampion">
       <categoryLinks>
-        <categoryLink name="Commanders" id="1faa2339ee4e29242baf76317c3fccdd" targetId="Commanders" primary="true" />
+        <categoryLink name="Commanders" id="41d8d11f6097ca2458fbc23e5afec1cc" targetId="Commanders" primary="true" />
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Retinue" id="e32ee92940de0c748b110f6f01186651">
+        <selectionEntryGroup name="Retinue" id="7e3acc5e740b1a0468e3ab0662f71e41">
           <entryLinks>
-            <entryLink import="true" name="Northmen Axe" id="bdc39d937fe54f64485d7bed3108b2a9" type="selectionEntry" targetId="northmenAxe" />
-            <entryLink import="true" name="Abyssal Warriors" id="2a2bc48f48767ac4fb7ae216e03564ca" type="selectionEntry" targetId="abyssalWarriors" />
-            <entryLink import="true" name="Abyssal Knights" id="985469882af769a409d296df4e16dff1" type="selectionEntry" targetId="abyssalKnights" />
-            <entryLink import="true" name="Abyssal Chariot" id="06a18ccf3a20c8b4288d66ffe0865a01" type="selectionEntry" targetId="abyssalChariot" />
-            <entryLink import="true" name="Manticore" id="0275064c8dbf01c42ba77a55eb2ae942" type="selectionEntry" targetId="manticore" />
-            <entryLink import="true" name="Abyssal Dragon" id="f83d17451c58e1a4c9c691b6f308a856" type="selectionEntry" targetId="abyssalDragon" />
+            <entryLink import="true" name="Northmen Axe" id="80ce127024713e14bab354572edc2f53" type="selectionEntry" targetId="northmenAxe" />
+            <entryLink import="true" name="Abyssal Warriors" id="2b9074974cb37c34894d5d6071bcd642" type="selectionEntry" targetId="abyssalWarriors" />
+            <entryLink import="true" name="Abyssal Knights" id="fcfb11b50eb354d44a4201e7fcfbb9b5" type="selectionEntry" targetId="abyssalKnights" />
+            <entryLink import="true" name="Abyssal Chariot" id="4c2a06f7a2cf3f7478b68871463bf4e3" type="selectionEntry" targetId="abyssalChariot" />
+            <entryLink import="true" name="Manticore" id="290ae9abebc075847accd9bf6af7a135" type="selectionEntry" targetId="manticore" />
+            <entryLink import="true" name="Abyssal Dragon" id="030e5c181f7aa624ab67885d722dc40f" type="selectionEntry" targetId="abyssalDragon" />
           </entryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="39ad9dc8e7999d44aa591af507d6897b" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="119c0e8bdbd44314e8dc3a8f10ce768c" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f14bcde0ef1c4c46af0629326c1c40f" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="302c519ff0c640f4dbabb0ef84f75279" />
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Weapon Set" id="09ca4f2927de7b14e8e0d8d8ba5fee30" defaultSelectionEntryId="ccwshield">
+        <selectionEntryGroup name="Weapon Set" id="d41fd83db746111419e0eb61428a652e" defaultSelectionEntryId="ccwshield">
           <entryLinks>
-            <entryLink name="Hand Weapon and Shield" id="c39a2dfb701b5604f84b7630d312e0bb" type="selectionEntry" targetId="ccwshield">
+            <entryLink name="Hand Weapon and Shield" id="90bfd13c367a7a34386aafa27e0e9a5a" type="selectionEntry" targetId="ccwshield">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7521a018754f13b45804e20a94db7c9e" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbd73e75b0fc33f448acb6519b504431" />
               </constraints>
               <modifiers>
                 <modifier type="increment" value="5" field="268a-a403-0d9c-50ac">
@@ -493,9 +896,9 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink name="Greatweapon" id="62f53085460d3584092a12e312b88a3d" type="selectionEntry" targetId="greatweapon">
+            <entryLink name="Greatweapon" id="e70bcbb5b299f2a47b099e7c85817923" type="selectionEntry" targetId="greatweapon">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1104f0960b950d848895dfcc5bda0f69" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e8879adcfd822f4cab3a1684a3879a1" />
               </constraints>
               <modifiers>
                 <modifier type="increment" value="10" field="268a-a403-0d9c-50ac">
@@ -505,9 +908,9 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink name="Two Hand Weapons" id="18a303894918b534b8878e7dbdcc5f49" type="selectionEntry" targetId="2CCW">
+            <entryLink name="Two Hand Weapons" id="5c6472f032dac8a49a76673546eae211" type="selectionEntry" targetId="2CCW">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a168f1a9968505c47b9aaa86fa5009b5" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="511bde0aa7b29704bb5c022551395adb" />
               </constraints>
               <modifiers>
                 <modifier type="increment" value="10" field="268a-a403-0d9c-50ac">
@@ -517,9 +920,9 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink name="Halberd" id="fc2d4d8efeea41e4ca68673101ddd946" type="selectionEntry" targetId="halberd">
+            <entryLink name="Halberd" id="932b308a544a5084385a614be08793e3" type="selectionEntry" targetId="halberd">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e675d332fb899434aa8bcff328648678" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e66a2d0db3d078e4183d954620084cb4" />
               </constraints>
               <modifiers>
                 <modifier type="increment" value="10" field="268a-a403-0d9c-50ac">
@@ -531,102 +934,394 @@
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea9ba5f9708206c4dabe8c5cd650258b" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e08979bd0f058e64a907742efffb164e" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="265e92920a3fa5c41b4e796b8eeac5de" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fe8d93281104f54c90f7d17ea503547" />
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Magic Items" id="8b45c3fbde6934343b14531a0c58a70b" defaultSelectionEntryId="">
+          <entryLinks>
+            <entryLink name="Vitality" id="280113d860e110e459333b847a65e62d" type="selectionEntry" targetId="vitality">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f30992f5588fa3b4faa6b42f5b2785bc" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="10" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Unyielding" id="b901ac417bbe82d48bcd456f28ca0f95" type="selectionEntry" targetId="unyielding">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a4e4afc82dbac944b76cfd29f0415a9" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="10" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Command" id="946ebbf2bd6253f46b76a01a638b369f" type="selectionEntry" targetId="command">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecb59d0737eae104cbf7110fbf7dcfc4" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="10" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Prowess" id="6f3aa04e1b563074991fa9d0d3b56409" type="selectionEntry" targetId="prowess">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e8e97f892476764da84278b59956fc9" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="20" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Unnatural Power" id="223935f1fa924fd409a94cf480eeaeb0" type="selectionEntry" targetId="unaturalPower">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c19e0fb71fcc32c44a74487329c9089e" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="20" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Potion of Power" id="0bc5f79f9d3bb44478dd6bf1e21c5312" type="selectionEntry" targetId="potionOfPower">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="577e8d3b022aa5c4e99621318d8ab323" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="25" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="32052c26fbdc9424b87690b9602d3a1f" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e93769311568ce94e91f9d13c2c0811d" />
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Magic Weapons" id="cc67ce9c16ef9754cbfc66150e149357" defaultSelectionEntryId="">
+          <entryLinks>
+            <entryLink name="Cruelty" id="efe7bbb034cddac45938fc699bf81be9" type="selectionEntry" targetId="cruelty">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f90b9c7569103e4abbbc86e3876bd89" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="15" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Flametounge" id="073f818b4656a0e448fb1aca7be3e1a2" type="selectionEntry" targetId="flametounge">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa2d211f06134fa4bbf327bd8c2fe516" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="15" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Relentless" id="296b8105630d6974590660102db7d047" type="selectionEntry" targetId="relentless">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="314969c66af852e45a770244b175c28a" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="20" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Heart Seeker" id="7e85b61d56778514d81ada2b5ec208ff" type="selectionEntry" targetId="heartSeeker">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1be36cf4895b16c4eae8d2f58b9b28c0" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="20" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="True Strike" id="f1d98a93622c72a4e960213973d205d9" type="selectionEntry" targetId="trueStrike">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d3e8afb78dd02d4c84521bd2abd2ff1" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="20" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7cf62828b31b55d43becdf3d931ece8a" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03b06b865e9f27b4e9c3fad2198534ba" />
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Abyssal Champion" id="7c1311caf2de28b4bafc4cd004975788" defaultAmount="1">
+        <selectionEntry type="model" import="true" name="Abyssal Champion" id="d58d802b06780db41af689122edd64e3" defaultAmount="1">
           <costs>
             <cost name="Points" typeId="268a-a403-0d9c-50ac" value="60" />
           </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89962511ab6228b459a60360f36104f8" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc7e2aa1bf3aeda41b6d696d0ad4e62e" />
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink name="Abyssal Armor" id="702e407877a84ff4c9fa0793e4ec8902" type="selectionEntry" targetId="abyssalArmor">
+        <entryLink name="Abyssal Armor" id="e53a219784c38cb4cb8a9caf25774208" type="selectionEntry" targetId="abyssalArmor">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4222a20036539074d963a1e57dc68834" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1ee909a243e8c84b811d662995b7163" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a969ae65d3c93da4fab2c20ba67ccd5d" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2ea8309cb3aab041bd37199e8d6edf3" />
           </constraints>
         </entryLink>
-        <entryLink name="Demonic Possession" id="5743e3779959a7447baa4f2fb50456c9" type="selectionEntry" targetId="demonicPossession">
+        <entryLink name="Demonic Possession" id="da0d7e289b7719642b97a0a1684d5c0f" type="selectionEntry" targetId="demonicPossession">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="900ab316da2f46740900821b553b9839" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9848c21ccc6c35b47afecb0c8b65ce96" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b7d4917a77b65334aa0ebb8353bd775f" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b29b75e544c4f4b4daebe16614afdbbd" />
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" name="Abyssal Sorcerer" id="abyssalSorcerer">
       <categoryLinks>
-        <categoryLink name="Commanders" id="42bdbc898b0ce234f946a6bc5e62b095" targetId="Commanders" primary="true" />
+        <categoryLink name="Commanders" id="d10ed8523067cb445ade17e1fe36f455" targetId="Commanders" primary="true" />
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Retinue" id="4306eb545f5655648bceb9e6de6c871d">
+        <selectionEntryGroup name="Retinue" id="2a637bfa64fe5814db0a9026e32c5af3">
           <entryLinks>
-            <entryLink import="true" name="Northmen Axe" id="8246802921433474eb71f7cef33788ae" type="selectionEntry" targetId="northmenAxe" />
-            <entryLink import="true" name="Northmen Horse" id="4d3759d83165922499267013d9de3711" type="selectionEntry" targetId="northmenHorse" />
-            <entryLink import="true" name="Abyssal Warriors" id="2c607431a1cefc148bc263fffaf35b47" type="selectionEntry" targetId="abyssalWarriors" />
-            <entryLink import="true" name="Abyssal Knights" id="52f71dab504bfaa419a4d1493519399c" type="selectionEntry" targetId="abyssalKnights" />
-            <entryLink import="true" name="Abyssal Chariot" id="cef2f7a8686eeda408ae7162df68855f" type="selectionEntry" targetId="abyssalChariot" />
-            <entryLink import="true" name="Manticore" id="c6828d8a57545cd4483d84501552ccf6" type="selectionEntry" targetId="manticore" />
-            <entryLink import="true" name="Abyssal Dragon" id="ed563e34376c8f54096bf837a9a2d5fd" type="selectionEntry" targetId="abyssalDragon" />
+            <entryLink import="true" name="Northmen Axe" id="246e62f37c61f6e4fbde195059fa5a09" type="selectionEntry" targetId="northmenAxe" />
+            <entryLink import="true" name="Northmen Horse" id="3f6a8589ad19a1e44b3083e2ed922782" type="selectionEntry" targetId="northmenHorse" />
+            <entryLink import="true" name="Abyssal Warriors" id="843989ab7e28f2249a78801f5fba0687" type="selectionEntry" targetId="abyssalWarriors" />
+            <entryLink import="true" name="Abyssal Knights" id="9bba5b8cc4d0f304e8875536599d4541" type="selectionEntry" targetId="abyssalKnights" />
+            <entryLink import="true" name="Abyssal Chariot" id="954de08a078d9cc4a9255b9b245fc40c" type="selectionEntry" targetId="abyssalChariot" />
+            <entryLink import="true" name="Manticore" id="5813d686a02844547a708ed891eba6d0" type="selectionEntry" targetId="manticore" />
+            <entryLink import="true" name="Abyssal Dragon" id="34e76b42d77b850439c6d0def003b74f" type="selectionEntry" targetId="abyssalDragon" />
           </entryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd1c8cde81f03ae4bba019dcb0999909" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e52a3fb1fdabb5479f3129a7efaf276" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da39e37fb81f9604890b232d50e0b040" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b9696f6f5583654a8265049201e8ae6" />
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Magic Items" id="a1a5cf40c110a5f419775d9043c15ea8" defaultSelectionEntryId="">
+          <entryLinks>
+            <entryLink name="Vitality" id="4d4fb87d451f76a4c925309829c5c042" type="selectionEntry" targetId="vitality">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b1a6d1bbe0cbf14baf9ce0956f92bec" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="10" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Unyielding" id="d77c7d24b3717c543a9120aea8edd84b" type="selectionEntry" targetId="unyielding">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8750a573da993f44d887fd9d3049cd3b" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="10" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Command" id="990a2652331848045813d2ca6889d73f" type="selectionEntry" targetId="command">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa6bd08f2a245874cb459e4a595a5f56" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="10" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Prowess" id="7e79f3a7998f08a428847567786d81cf" type="selectionEntry" targetId="prowess">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c35635cd203a7b44887f12fb169680c3" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="20" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Unnatural Power" id="e6483b03d85782d47b6e31c903ef8d9d" type="selectionEntry" targetId="unaturalPower">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c598f5a09832c243a7e775b58c750d4" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="20" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Potion of Power" id="11aa0ae87b57fdc49817ba3b1363c74c" type="selectionEntry" targetId="potionOfPower">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2145bc55619a8884faa208a5f73fdc72" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="25" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="941f731c834da8642a95f444d96ee773" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68f81dda028de4e4195e79e26c8d0dff" />
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Spells" id="a9067838c224d4741bdd8a207a3e0d26" defaultSelectionEntryId="shadowBolt">
+          <entryLinks>
+            <entryLink name="Shadow Bolt" id="83642cc8d0301644ca0e79e680776efa" type="selectionEntry" targetId="shadowBolt">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="070ebe43a848dc34ca3b73e008a35237" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="20" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Fireball" id="41727e574621e0046af5b26d715bcfa1" type="selectionEntry" targetId="fireball">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac8516b7f663d7842b59daba3195f140" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="25" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Hex Of Ruin" id="936613a7333aaa245857e804ec0e36ed" type="selectionEntry" targetId="hexOfRuin">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ad3fae253c0cd547bda3285304f9690" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="30" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Arcane Web" id="1d96eac0131a8f34ea4f2cd5f08cd162" type="selectionEntry" targetId="arcaneWeb">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25bd7e96d0ece5b45b0c5250f5d55485" />
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="30" field="268a-a403-0d9c-50ac">
+                  <repeats>
+                    <repeat repeats="1" value="1" field="selections" scope="parent" shared="true" childId="model" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74bb1cf3f9d988e41af169f59c3c6bf8" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4dd393bd76990054ba35d806deceb7c3" />
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Abyssal Sorcerer" id="9cdfc684bba17a640983b1a2787ef40e" defaultAmount="1">
+        <selectionEntry type="model" import="true" name="Abyssal Sorcerer" id="eab8e68883848c64bb19ed5071385bb1" defaultAmount="1">
           <costs>
             <cost name="Points" typeId="268a-a403-0d9c-50ac" value="50" />
           </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e16ad4dfa685a84db78252536f3b929" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2129ccc835e5573439059b4548d4c13a" />
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink name="Abyssal Armor" id="f2f96e8f3f6c2734caf365f419503c22" type="selectionEntry" targetId="abyssalArmor">
+        <entryLink name="Abyssal Armor" id="7369995893d7ef14ca84ef556d4ca784" type="selectionEntry" targetId="abyssalArmor">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="582e9745795ce714c89eded2a08fa638" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a867383e28ee8c14e8412b8207f00d05" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59dcd034d68b5b145a5347f3359c3542" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a82c4a02c6aee5b479781155fa23c982" />
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
-    <forceEntry name="Warband" id="9e718dcd8b9e9c345bcb4e42f670e1cb">
+    <forceEntry name="Warband" id="7a7e4c52ce28421408cd7f92f53cee9d">
       <categoryLinks>
-        <categoryLink name="Commanders" id="911cad9f0f697e541a89e2bc6f8dcaea" targetId="Commanders">
+        <categoryLink name="Commanders" id="a222a3ef4525b7b429b7001892c972a7" targetId="Commanders">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="dae14877c75058046bd50370e9e3c223" />
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="37575a023a27dd143967af6d4da1db34" />
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3df0e063a78024646a7515550fa01a41" />
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5afde2fc19f43f14ebbf1a7fb1bde3c9" />
           </constraints>
         </categoryLink>
-        <categoryLink name="Battle Line" id="fe4fe7d58e5a2784f9efbe0bce4aeedd" targetId="Battle Line">
+        <categoryLink name="Battle Line" id="112650f70461a844183acc2b0de1fbb1" targetId="Battle Line">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="b020453b91fda7b44ba482ea21469ade" />
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="33560e4b2d5a39a4da152f0363e3f6b8" />
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="a85b1280d8af47c4794300e8162668d5" />
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="3f0d56b300b14a847832b120f0f3ddb7" />
           </constraints>
         </categoryLink>
-        <categoryLink name="Fast Attack" id="a8c03f6dba848a842962ff020d42066d" targetId="Fast Attack">
+        <categoryLink name="Fast Attack" id="6393db44fada4e34798ff578c00f8f2c" targetId="Fast Attack">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="0b7578e5218b5c94c919599da4fed4fe" />
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="f2b200a8cd7b42f45b6230bb15b9f7ff" />
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="fdfc40f5cf3cffb439c3b368f6d3f5d6" />
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="85d8c791d9528eb44a9fe960e1b351e9" />
           </constraints>
         </categoryLink>
-        <categoryLink name="Demonic Allies" id="ac7ed15e4c30ffd4980a1c1cdb0c5cc9" targetId="Demonic Allies">
+        <categoryLink name="Demonic Allies" id="a68ec67eab533c742b15875fdd65b99c" targetId="Demonic Allies">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="1b2d160ac95b6dd45ab4111402c334b9" />
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0e859c4753cee5f4b84d75b19a4684e2" />
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e11ac66786d23334598bb1aacab3ef84" />
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="955dec7da56e33b41964a489262b52ac" />
           </constraints>
         </categoryLink>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="fd7dc15b406aba846b837a55e9dcb004" />
-        <constraint type="max" value="500" field="limit::268a-a403-0d9c-50ac" scope="force" shared="true" id="beefa88078723f1458a88f6d1f66825e" />
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="9080b6be883222744b676ce2d6a1a8df" />
+        <constraint type="max" value="500" field="limit::268a-a403-0d9c-50ac" scope="force" shared="true" id="b8d5bb8c7826aaa4fb20f8b882102b07" />
       </constraints>
     </forceEntry>
   </forceEntries>
